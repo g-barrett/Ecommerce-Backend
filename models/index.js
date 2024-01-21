@@ -12,7 +12,7 @@ Category.hasMany(Product, {
   onDelete: 'CASCADE',
 });
 
-Product.belongToMany(Tag, {
+Product.belongsToMany(Tag, {
   through: ProductTag,
   foreignKey: 'product_id',
   onDelete: 'CASCADE'
